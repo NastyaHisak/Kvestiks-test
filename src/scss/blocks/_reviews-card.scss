@@ -50,5 +50,9 @@
 @media (max-width: 991px) {
   .review-card {
     width: 300px;
+
+    .reviews-info {
+      height: 100px;
+    }
   }
 }

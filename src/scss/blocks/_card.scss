@@ -106,7 +106,7 @@
     flex-direction: column-reverse;
     height: unset;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 0 0 8px 8px;
     color: var(--crumbs-color);
     position: relative;
 
@@ -164,11 +164,13 @@
       width: 100%;
       max-height: 361px;
       position: relative;
+      border-radius: 0;
 
       img {
         object-fit: cover;
         width: 100%;
         height: 100%;
+        border-radius: 0;
       }
 
       &:before {
@@ -186,6 +188,18 @@
 
 @media (max-width: 510px) {
   .card-wrapper {
+
+    .card-inner {
+
+      .card-content {
+
+        .card-thesis-list {
+            width: 238px;
+        }
+      }
+    }
+
+
     .card-img {
       margin: 0 auto;
       max-width: 360px;
