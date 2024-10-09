@@ -1,0 +1,16 @@
+<section class="catalog">
+    @@include('blocks/breadcrumbs.html')
+    <div class="container-xl">
+        <div class="row">
+            <article class="col-12 col-xl-9 m-0 p-0 pe-xl-3">
+                @@loop('blocks/card.html', './data/card.json')
+                @@include('blocks/reviews.html')
+            </article>
+
+            <aside class="col-12 col-xl-3 p-0">
+                @@loop('blocks/sidebar.html', './data/card.json')
+            </aside>
+        </div>
+    </div>
+</section>
+

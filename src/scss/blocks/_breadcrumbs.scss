@@ -1,0 +1,12 @@
+.breadcrumbs {
+  padding: 24px 0 32px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(----crumbs-color);
+
+  .breadcrumb-item + .breadcrumb-item {
+    &:before {
+      content: '→';
+    }
+  }
+}
